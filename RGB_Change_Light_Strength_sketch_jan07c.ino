@@ -27,13 +27,13 @@ void loop()
     analogWrite(GREEN, 0);
     analogWrite(BLUE, 0);
   }
-  if (lightValue > 500 && lightValue < 700)
+  if (lightValue >= 500 && lightValue < 700)
   {
     analogWrite(RED, 0);
     analogWrite(GREEN, 0);
     analogWrite(BLUE, 255);
   }
-  if (lightValue > 700)
+  if (lightValue >= 700)
   {
     analogWrite(RED, 0);
     analogWrite(GREEN, 255);
